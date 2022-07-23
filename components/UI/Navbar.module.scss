@@ -1,0 +1,44 @@
+.navbar {
+  width: 100%;
+  padding: 1.5rem 1rem 2rem;
+
+  color: whitesmoke;
+  background-color: rgb(33, 35, 37);
+
+  &>a {
+    padding: 1rem 2rem;
+    display: block;
+    width: max-content;
+    border-radius: 1rem;
+
+    position: relative;
+
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+
+    &::before {
+      content: '';
+      display: table;
+      height: .3rem;
+      width: 80%;
+      border-radius: 100rem;
+
+      position: absolute;
+      left: 10%;
+      bottom: 0;
+
+      background-color: #600ca1;
+
+      transition: .2s ease-in-out;
+    }
+
+    &:hover {
+      // background-color: rgba($color: #000000, $alpha: .1);
+
+      &::before {
+        transform: translateY(-.6rem);
+      }
+    }
+  }
+}

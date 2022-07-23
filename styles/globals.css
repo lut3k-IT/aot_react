@@ -1,3 +1,11 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +21,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+#__next {
+  min-height: 100vh;
 }
