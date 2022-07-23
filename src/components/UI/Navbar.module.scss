@@ -5,6 +5,10 @@
   color: whitesmoke;
   background-color: rgb(33, 35, 37);
 
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
   &>a {
     padding: 1rem 2rem;
     display: block;
@@ -12,10 +16,6 @@
     border-radius: 1rem;
 
     position: relative;
-
-    &:not(:last-of-type) {
-      margin-right: 1rem;
-    }
 
     &::before {
       content: '';
@@ -33,12 +33,8 @@
       transition: .2s ease-in-out;
     }
 
-    &:hover {
-      // background-color: rgba($color: #000000, $alpha: .1);
-
-      &::before {
-        transform: translateY(-.6rem);
-      }
+    &:hover::before {
+      transform: translateY(-.4rem);
     }
   }
 }

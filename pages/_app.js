@@ -1,4 +1,4 @@
-import Overlay from '../components/UI/Overlay'
+import Overlay from '../src/components/UI/Overlay'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
